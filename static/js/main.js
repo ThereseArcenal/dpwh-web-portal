@@ -25,6 +25,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth',
                 block: 'start'
             });
+            
+            // Close mobile menu after clicking a link (for mobile)
+            const navbarCollapse = document.getElementById('navbarNav');
+            if (navbarCollapse.classList.contains('show')) {
+                navbarCollapse.classList.remove('show');
+                const toggler = document.querySelector('.navbar-toggler');
+                if (toggler) {
+                    toggler.setAttribute('aria-expanded', 'false');
+                }
+            }
         }
     });
 });
@@ -49,3 +59,16 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// Optional: Close mobile menu when window resizes to desktop
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 991) {
+        const navbarCollapse = document.getElementById('navbarNav');
+        if (navbarCollapse.classList.contains('show')) {
+            navbarCollapse.classList.remove('show');
+            const toggler = document.querySelector('.navbar-toggler');
+            if (toggler) {
+                toggler.setAttribute('aria-expanded', 'false');
+            }
+        }
+    }
+});
