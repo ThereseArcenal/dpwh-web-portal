@@ -1,5 +1,4 @@
-
-    /* Global Styles */
+/* Global Styles */
     :root {
         --primary-color: #333446;
         --primary-dark: #004c8c;
@@ -663,7 +662,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        opacity: 0.8;
+        opacity: 0.8;   
         transition: var(--transition);
     }
 
@@ -1418,6 +1417,21 @@
     color: #333446;
 }
 
+/* Procurement Unit Theme */
+.org-card.procurement-theme .org-image {
+    background: linear-gradient(135deg, #d4a574, #c39259);
+}
+
+.org-card.procurement-theme .org-info h5 {
+    color: #d4a574;
+}
+
+.org-card.procurement-theme .org-info .position {
+    background: linear-gradient(135deg, #d4a574, #c39259);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
 /* Hover effect enhancement */
 .org-card:hover {
@@ -1462,5 +1476,5 @@
 .org-image-square {
     aspect-ratio: 1/1;
     height: auto;
-    max-height: 200px;
+    max-height: 250px;
 }
