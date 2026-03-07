@@ -16,9 +16,14 @@
                     citizens of the Philippines. Our charter guides our actions and ensures accountability 
                     at every level of our organization.
                 </p>
-                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#charterModal">
-                    <i class="bi bi-file-pdf me-2"></i> View Charter
-                </button>
+                
+                <!-- Button Group -->
+                <div class="d-flex gap-3 flex-wrap">
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#charterMultiPageModal">
+                        <i class="bi bi-file-pdf me-2"></i> View Full Charter
+                    </button>
+                    
+                </div>
             </div>
 
             <!-- Right Content - Charter Card -->
@@ -56,27 +61,125 @@
     </div>
 </section>
 
-<!-- Citizens Charter Modal -->
-<div class="modal fade" id="charterModal" tabindex="-1" aria-labelledby="charterModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+<!-- Modal 2: Multiple Charter Pages - SIMPLE VERSION -->
+<div class="modal fade" id="charterMultiPageModal" tabindex="-1" aria-labelledby="charterMultiPageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header border-0">
-                <h5 class="modal-title fw-bold" id="charterModalLabel">Citizens's Charter</h5>
+                <h5 class="modal-title fw-bold" id="charterMultiPageModalLabel">Citizens's Charter - Full Document</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-0">
-                <!-- Sample Charter Image -->
-                <img src="https://via.placeholder.com/800x1000/004c8c/ffffff?text=Citizens+Charter" 
-                     alt="Citizens Charter" 
-                     class="img-fluid w-100" 
-                     style="max-height: 500px; object-fit: cover;">
+                <!-- Page Navigation Tabs - SIMPLE -->
+                <ul class="nav nav-tabs px-3 pt-3" id="charterPagesTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="page1-tab" data-bs-toggle="tab" data-bs-target="#page1" type="button" role="tab">Page 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="page2-tab" data-bs-toggle="tab" data-bs-target="#page2" type="button" role="tab">Page 2</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="page3-tab" data-bs-toggle="tab" data-bs-target="#page3" type="button" role="tab">Page 3</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="page4-tab" data-bs-toggle="tab" data-bs-target="#page4" type="button" role="tab">Page 4</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="page5-tab" data-bs-toggle="tab" data-bs-target="#page5" type="button" role="tab">Page 5</button>
+                    </li>
+                </ul>
+                
+                <!-- Tab Content - SIMPLE -->
+                <div class="tab-content p-3" id="charterPagesTabContent">
+                    <!-- Page 1 -->
+                    <div class="tab-pane fade show active" id="page1" role="tabpanel">
+                        <div class="charter-image-container" style="max-height: 70vh; overflow-y: auto;">
+                            <img src="static/css/images/6.png" 
+                                 alt="Citizens Charter Page 1" 
+                                 class="img-fluid w-100"
+                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/800x1000/333446/ffffff?text=Citizens+Charter+Page+1'">
+                        </div>
+                    </div>
+                    
+                    <!-- Page 2 -->
+                    <div class="tab-pane fade" id="page2" role="tabpanel">
+                        <div class="charter-image-container" style="max-height: 70vh; overflow-y: auto;">
+                            <img src="static/css/images/7.png" 
+                                 alt="Citizens Charter Page 2" 
+                                 class="img-fluid w-100"
+                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/800x1000/27ae60/ffffff?text=Citizens+Charter+Page+2'">
+                        </div>
+                    </div>
+                    
+                    <!-- Page 3 -->
+                    <div class="tab-pane fade" id="page3" role="tabpanel">
+                        <div class="charter-image-container" style="max-height: 70vh; overflow-y: auto;">
+                            <img src="static/css/images/8.png" 
+                                 alt="Citizens Charter Page 3" 
+                                 class="img-fluid w-100"
+                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/800x1000/e67e22/ffffff?text=Citizens+Charter+Page+3'">
+                        </div>
+                    </div>
+                    
+                    <!-- Page 4 -->
+                    <div class="tab-pane fade" id="page4" role="tabpanel">
+                        <div class="charter-image-container" style="max-height: 70vh; overflow-y: auto;">
+                            <img src="static/css/images/9.png" 
+                                 alt="Citizens Charter Page 4" 
+                                 class="img-fluid w-100"
+                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/800x1000/8e44ad/ffffff?text=Citizens+Charter+Page+4'">
+                        </div>
+                    </div>
+                    
+                    <!-- Page 5 -->
+                    <div class="tab-pane fade" id="page5" role="tabpanel">
+                        <div class="charter-image-container" style="max-height: 70vh; overflow-y: auto;">
+                            <img src="static/css/images/10.png" 
+                                 alt="Citizens Charter Page 5" 
+                                 class="img-fluid w-100"
+                                 onerror="this.onerror=null; this.src='https://via.placeholder.com/800x1000/0066b3/ffffff?text=Citizens+Charter+Page+5'">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer border-0">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <a href="#" class="btn btn-primary">
-                    <i class="bi bi-download me-2"></i> Download PDF
-                </a>
+            <div class="modal-footer border-0 d-flex justify-content-between flex-wrap">
+                <div class="d-flex gap-2 flex-wrap">
+                    <a href="#" class="btn btn-primary" id="downloadAllImagesBtn">
+                        <i class="bi bi-download me-2"></i> Download All Images
+                    </a>
+                    <a href="#" class="btn btn-outline-primary">
+                        <i class="bi bi-file-pdf"></i> Download PDF
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<!-- JavaScript for Download All Images -->
+<script>
+document.getElementById('downloadAllImagesBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Array of image paths
+    const images = [
+        'static/css/images/6.png',
+        'static/css/images/7.png',
+        'static/css/images/8.png',
+        'static/css/images/9.png',
+        'static/css/images/10.png'
+    ];
+    
+    // Download each image
+    images.forEach((image, index) => {
+        const link = document.createElement('a');
+        link.href = image;
+        link.download = `DPWH-Charter-Page${index + 1}.png`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+    
+    // Optional: Show a message
+    alert('Downloading all charter pages...');
+});
+</script>
