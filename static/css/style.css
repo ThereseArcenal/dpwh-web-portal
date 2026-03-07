@@ -1355,7 +1355,7 @@
 }
 
 .org-info .position {
-    color: #FB8B23;
+    color: #000000;
     font-weight: 600;
     font-size: 0.95rem;
     margin-bottom: 5px;
@@ -1387,7 +1387,7 @@
 }
 
 .org-card.finance-theme .org-info h5 {
-    color: #27ae60;
+    color: #000000;
 }
 
 /* Operations Unit Theme */
@@ -1396,7 +1396,7 @@
 }
 
 .org-card.operations-theme .org-info h5 {
-    color: #e67e22;
+    color: #000000;
 }
 
 /* Planning Unit Theme */
@@ -1410,7 +1410,7 @@
 
 /* Special for Project Creator */
 .org-card.special-theme .org-image {
-    background: linear-gradient(135deg, #333446, #FB8B23);
+    background: linear-gradient(135deg, #FB8B23 #000000);
 }
 
 .org-card.special-theme .org-info h5 {
@@ -1419,15 +1419,15 @@
 
 /* Procurement Unit Theme */
 .org-card.procurement-theme .org-image {
-    background: linear-gradient(135deg, #d4a574, #c39259);
+    background: linear-gradient(135deg, #000000, #c39259);
 }
 
 .org-card.procurement-theme .org-info h5 {
-    color: #d4a574;
+    color: #000000;
 }
 
 .org-card.procurement-theme .org-info .position {
-    background: linear-gradient(135deg, #d4a574, #c39259);
+    background: linear-gradient(135deg, #000000, #c39259);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1477,4 +1477,52 @@
     aspect-ratio: 1/1;
     height: auto;
     max-height: 250px;
+}
+
+/* Slideshow Styles */
+#unitSlideshow .carousel-wrapper {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    min-height: 500px;
+}
+
+#unitSlideshow .carousel-control-prev,
+#unitSlideshow .carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+#unitSlideshow .carousel-control-prev:hover,
+#unitSlideshow .carousel-control-next:hover {
+    opacity: 1;
+    background: var(--primary-dark);
+}
+
+#unitSlideshow .carousel-indicators {
+    bottom: -50px;
+}
+
+#unitSlideshow .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    border: none;
+}
+
+#unitSlideshow .carousel-indicators button.active {
+    background: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    #unitSlideshow .carousel-wrapper {
+        padding: 20px;
+    }
 }

@@ -6,765 +6,308 @@
             <h2 class="display-4 mb-3">Organizational Chart</h2>
             <p class="lead text-muted">Meet the dedicated team members across different units</p>
         </div>
-        <!-- Tab Content -->
-        <div class="tab-content">
-            <!-- Office of the Director -->
-            <div class="tab-pane fade show active" id="office-unit" role="tabpanel">
-                <div class="carousel-wrapper" data-aos="fade-up">
-                    <div id="officeCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-                            <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#officeCarousel" data-bs-slide-to="2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <!-- Slide 1: Director Team -->
-                            <div class="carousel-item active">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card office-theme">
-                                            <div class="org-image">
-                                                <img src="static/css/images/SAB.jpg" alt="Director" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">PROCUMENT UNIT</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Sharinah A. Batocapala</h5>
-                                                <p class="position">Engineering ||| | Procument  Engineer</p>
-                                                <p class="department">PROCUMENT UNIT</p>
-                                            </div>
+
+        <!-- Simple Slideshow Container -->
+        <div id="unitSlideshow" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="6"></button>
+            </div>
+
+            <!-- Slideshow Content -->
+            <div class="carousel-inner">
+                <!-- Slide 1: Office of the District Engineer -->
+                <div class="carousel-item active">
+                    <div class="carousel-wrapper">
+                        <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
+                            <i class=""></i>Office of the District Engineer
+                        </h3>
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="org-card office-theme">
+                                    <div class="org-image">
+                                        <img src="static/css/images/DE.jpg" alt="Manolo B. Madronio. JR." class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">District Engineer</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card office-theme">
-                                            <div class="org-image">
-                                                <img src="static/css/images/Paglinawan.jpg" alt="Assistant Director" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">PROCUMENT UNIT</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Erik Augustine C. Paglinawan</h5>
-                                                <p class="position">Engineer || </p>
-                                                <p class="department">PROCUMENT UNIT</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                            
-                            <!-- Slide 2: ONLY YOUR CARD - No other team members -->
-                            <div class="carousel-item">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6 mx-auto">
-                                        <!-- YOUR SPECIAL CARD - Standalone -->
-                                        <div class="org-card creator-card">
-                                            <div class="org-image">
-                                                <img src="static/css/images/me.png" 
-                                                     alt="Therese Andrei C. Arcenal" 
-                                                     class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Full Stack Developer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Therese Andrei C. Arcenal</h5>
-                                                <p class="position">Project Creator | UI/UX Designer & Full Stack Developer</p>
-                                                <div class="creator-badge">
-                                                    <span class="badge">Project Lead</span>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
+                                    <div class="org-info">
+                                        <h5>Manolo B. Madronio. JR.</h5>
+                                        <p class="position">Office of the District Engineer</p>
+                                        <p class="department">DISTRICT ENGINEER</p>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <!-- Slide 3: District Engineer -->
-                            <div class="carousel-item">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card office-theme">
-                                            <div class="org-image">
-                                                <img src="static/css/images/DE.jpg" alt="Secretary" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">District Engineer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Manolo B. Madronio. JR.</h5>
-                                                <p class="position">Office of the District Engineer</p>
-                                                <p class="department">District Engineer</p>
-                                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="org-card office-theme">
+                                    <div class="org-image">
+                                        <img src="static/css/images/ADE.jpg" alt="Alfredo E. Hernandez" class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">Assistant District Engineer</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card office-theme">
-                                            <div class="org-image">
-                                                <img src="static/css/images/ADE.jpg" alt="Staff" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Assistant District Engineer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Alfredo E. Hernandez</h5>
-                                                <p class="position">Office of the Assistant District Engineer</p>
-                                                <p class="department">ASSISTANT DISTRICT ENGINEER</p>
-                                            </div>
-                                        </div>
+                                    <div class="org-info">
+                                        <h5>Alfredo E. Hernandez</h5>
+                                        <p class="position">Office of the Assistant District Engineer</p>
+                                        <p class="department">ASSISTANT DISTRICT ENGINEER</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev carousel-nav-btn" type="button" data-bs-target="#officeCarousel" data-bs-slide="prev">
-                            <i class="bi bi-chevron-left"></i>
-                        </button>
-                        <button class="carousel-control-next carousel-nav-btn" type="button" data-bs-target="#officeCarousel" data-bs-slide="next">
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Procurement Unit -->
+                <div class="carousel-item">
+                    <div class="carousel-wrapper">
+                        <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
+                            <i class=""></i>Procurement Unit
+                        </h3>
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="org-card procurement-theme">
+                                    <div class="org-image">
+                                        <img src="static/css/images/SAB.jpg" alt="Sharinah A. Batocapala" class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">Procurement Engineer</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-info">
+                                        <h5>Sharinah A. Batocapala</h5>
+                                        <p class="position">Engineering III | Procurement Engineer</p>
+                                        <p class="department">PROCUREMENT UNIT</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="org-card procurement-theme">
+                                    <div class="org-image">
+                                        <img src="static/css/images/Paglinawan.jpg" alt="Erik Augustine C. Paglinawan" class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">Engineer II</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-info">
+                                        <h5>Erik Augustine C. Paglinawan</h5>
+                                        <p class="position">Engineer II</p>
+                                        <p class="department">PROCUREMENT UNIT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Information Communication Technology Staff -->
+                <div class="carousel-item">
+                    <div class="carousel-wrapper">
+                        <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
+                            <i class=""></i>Information Communication Technology Staff
+                        </h3>
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="org-card finance-theme">
+                                    <div class="org-image">
+                                        <img src="static/css/images/famulagan.jpg" alt="Mario M. Famulagan, Jr." class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">Technology Staff</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-info">
+                                        <h5>Mario M. Famulagan, Jr.</h5>
+                                        <p class="position">Computer Maintenance Technologist II</p>
+                                        <p class="department">INFORMATION COMMUNICATION TECHNOLOGY STAFF</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-lg-4 col-md-6">
+                                <div class="org-card procurement-theme">
+                                    <div class="org-image">
+                                        <img src="static/css/images/nolasco.jpg" alt="Erik Augustine C. Paglinawan" class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">Technology Staff</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-info">
+                                        <h5>Joshua Nolasco</h5>
+                                        <p class="position">Computer Maintenance Technologist II</p>
+                                        <p class="department">INFORMATION COMMUNICATION TECHNOLOGY STAFF</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+                <!-- Slide 4: Planning Unit -->
+                <div class="carousel-item">
+                    <div class="carousel-wrapper">
+                        <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
+                            <i class=""></i>Planning and Design Unit
+                        </h3>
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="org-card planning-theme">
+                                    <div class="org-image">
+                                        <img src="https://via.placeholder.com/300x350/8e44ad/ffffff?text=Planning+Head" alt="Planning Head" class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">Planning Director</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-info">
+                                        <h5>Christian B Felices</h5>
+                                        <p class="position">Section Chief | Engineer ||</p>
+                                        <p class="department">PLANNING AND DESIGN UNIT</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="org-card planning-theme">
+                                    <div class="org-image">
+                                        <img src="https://via.placeholder.com/300x350/8e44ad/ffffff?text=Analyst" alt="Analyst" class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">Senior Analyst</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-info">
+                                        <h5>David Cortez</h5>
+                                        <p class="position">Program Analyst III</p>
+                                        <p class="department">PLANNING UNIT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5: Construction Unit -->
+                <div class="carousel-item">
+                    <div class="carousel-wrapper">
+                        <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
+                            <i class=""></i>Construction Unit
+                        </h3>
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="org-card">
+                                    <div class="org-image" style="background: linear-gradient(135deg, #0066b3, #004c8c);">
+                                        <img src="https://via.placeholder.com/300x350/0066b3/ffffff?text=Chief+Engineer" alt="Chief Engineer" class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">Chief Engineer</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-info">
+                                        <h5>Engr. Ricardo Dimagiba</h5>
+                                        <p class="position">Chief Engineer</p>
+                                        <p class="department">ENGINEERING UNIT</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="org-card">
+                                    <div class="org-image" style="background: linear-gradient(135deg, #0066b3, #004c8c);">
+                                        <img src="https://via.placeholder.com/300x350/0066b3/ffffff?text=Structural+Engineer" alt="Structural Engineer" class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">Structural Engineer</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-info">
+                                        <h5>Engr. Maria Clara Gomez</h5>
+                                        <p class="position">Structural Engineer III</p>
+                                        <p class="department">ENGINEERING UNIT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Administrative Unit -->
+                <div class="carousel-item">
+                    <div class="carousel-wrapper">
+                        <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
+                            <i class="bi bi-person-badge me-2"></i>Administrative Unit
+                        </h3>
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="org-card">
+                                    <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
+                                        <img src="https://via.placeholder.com/300x350/6c757d/ffffff?text=Admin+Head" alt="Admin Head" class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">Administrative Head</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-info">
+                                        <h5>Atty. Marilou Diaz</h5>
+                                        <p class="position">Administrative Officer V</p>
+                                        <p class="department">ADMINISTRATIVE UNIT</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="org-card">
+                                    <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
+                                        <img src="https://via.placeholder.com/300x350/6c757d/ffffff?text=HR+Manager" alt="HR Manager" class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">HR Manager</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-info">
+                                        <h5>Carolina Hernandez</h5>
+                                        <p class="position">Human Resources Manager</p>
+                                        <p class="department">ADMINISTRATIVE UNIT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 7: Project Development Team (Your Card) -->
+                <div class="carousel-item">
+                    <div class="carousel-wrapper">
+                        <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
+                            <i class="bi bi-star-fill me-2" style="color: #FB8B23;"></i>Project Development Team
+                        </h3>
+                        <div class="row g-4 justify-content-center">
+                            <div class="col-lg-4 col-md-6 mx-auto">
+                                <div class="org-card creator-card">
+                                    <div class="org-image">
+                                        <img src="static/css/images/me.png" alt="Therese Andrei C. Arcenal" class="img-fluid">
+                                        <div class="org-overlay">
+                                            <p class="overlay-text">Full Stack Developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-info">
+                                        <h5>Therese Andrei C. Arcenal</h5>
+                                        <p class="position">Project Creator | UI/UX Designer & Full Stack Developer</p>
+                                        <div class="creator-badge">
+                                            <span class="badge">Project Lead</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Finance Unit -->
-            <div class="tab-pane fade" id="finance-unit" role="tabpanel">
-                <div class="carousel-wrapper" data-aos="fade-up">
-                    <div id="financeCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#financeCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-                            <button type="button" data-bs-target="#financeCarousel" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#financeCarousel" data-bs-slide-to="2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card finance-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/27ae60/ffffff?text=Finance+Head" alt="Finance Head" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Finance Head</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Patricia Aquino</h5>
-                                                <p class="position">Finance Officer IV</p>
-                                                <p class="department">Finance Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card finance-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/27ae60/ffffff?text=Accountant" alt="Accountant" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Senior Accountant</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Robert Santos</h5>
-                                                <p class="position">Accountant III</p>
-                                                <p class="department">Finance Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card finance-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/27ae60/ffffff?text=Cashier" alt="Cashier" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Cashier</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Lucia Torres</h5>
-                                                <p class="position">Cashier II</p>
-                                                <p class="department">Finance Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card finance-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/27ae60/ffffff?text=Auditor" alt="Auditor" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Internal Auditor</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Miguel Reyes</h5>
-                                                <p class="position">Internal Auditor II</p>
-                                                <p class="department">Finance Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card finance-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/27ae60/ffffff?text=Budget" alt="Budget Officer" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Budget Officer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Elena Villanueva</h5>
-                                                <p class="position">Budget Officer III</p>
-                                                <p class="department">Finance Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card finance-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/27ae60/ffffff?text=Bookkeeper" alt="Bookkeeper" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Bookkeeper</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Ramon Mercado</h5>
-                                                <p class="position">Bookkeeper II</p>
-                                                <p class="department">Finance Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card finance-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/27ae60/ffffff?text=Payroll" alt="Payroll Specialist" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Payroll Specialist</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Carmen Fernandez</h5>
-                                                <p class="position">Payroll Officer II</p>
-                                                <p class="department">Finance Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev carousel-nav-btn" type="button" data-bs-target="#financeCarousel" data-bs-slide="prev">
-                            <i class="bi bi-chevron-left"></i>
-                        </button>
-                        <button class="carousel-control-next carousel-nav-btn" type="button" data-bs-target="#financeCarousel" data-bs-slide="next">
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Operations Unit -->
-            <div class="tab-pane fade" id="operations-unit" role="tabpanel">
-                <div class="carousel-wrapper" data-aos="fade-up">
-                    <div id="operationsCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#operationsCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-                            <button type="button" data-bs-target="#operationsCarousel" data-bs-slide-to="1"></button>
-                            <button type="button" data-bs-target="#operationsCarousel" data-bs-slide-to="2"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card operations-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/e67e22/ffffff?text=Operations+Head" alt="Operations Head" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Operations Manager</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Fernando Gonzales</h5>
-                                                <p class="position">Operations Manager</p>
-                                                <p class="department">Operations Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card operations-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/e67e22/ffffff?text=Engineer" alt="Engineer" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Civil Engineer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Sofia Romero</h5>
-                                                <p class="position">Civil Engineer II</p>
-                                                <p class="department">Operations Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card operations-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/e67e22/ffffff?text=Supervisor" alt="Supervisor" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Maintenance Supervisor</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Ramon Gutierrez</h5>
-                                                <p class="position">Maintenance Supervisor</p>
-                                                <p class="department">Operations Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card operations-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/e67e22/ffffff?text=Technician" alt="Technician" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Senior Technician</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Jorge Martinez</h5>
-                                                <p class="position">Equipment Technician II</p>
-                                                <p class="department">Operations Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card operations-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/e67e22/ffffff?text=Field+Staff" alt="Field Staff" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Field Supervisor</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Ricardo Lopez</h5>
-                                                <p class="position">Field Operations Supervisor</p>
-                                                <p class="department">Operations Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card operations-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/e67e22/ffffff?text=Inspector" alt="Inspector" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Quality Inspector</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Luisa Mercado</h5>
-                                                <p class="position">Quality Control Inspector</p>
-                                                <p class="department">Operations Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card operations-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/e67e22/ffffff?text=Driver" alt="Driver" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Fleet Manager</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Antonio Reyes</h5>
-                                                <p class="position">Fleet Operations Manager</p>
-                                                <p class="department">Operations Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev carousel-nav-btn" type="button" data-bs-target="#operationsCarousel" data-bs-slide="prev">
-                            <i class="bi bi-chevron-left"></i>
-                        </button>
-                        <button class="carousel-control-next carousel-nav-btn" type="button" data-bs-target="#operationsCarousel" data-bs-slide="next">
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Planning Unit -->
-            <div class="tab-pane fade" id="planning-unit" role="tabpanel">
-                <div class="carousel-wrapper" data-aos="fade-up">
-                    <div id="planningCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#planningCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-                            <button type="button" data-bs-target="#planningCarousel" data-bs-slide-to="1"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card planning-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/8e44ad/ffffff?text=Planning+Head" alt="Planning Head" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Planning Director</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Elena Bismarck</h5>
-                                                <p class="position">Planning Officer IV</p>
-                                                <p class="department">Planning Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card planning-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/8e44ad/ffffff?text=Analyst" alt="Analyst" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Senior Analyst</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>David Cortez</h5>
-                                                <p class="position">Program Analyst III</p>
-                                                <p class="department">Planning Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card planning-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/8e44ad/ffffff?text=Specialist" alt="Specialist" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Data Specialist</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Isabella Vasquez</h5>
-                                                <p class="position">Data Specialist II</p>
-                                                <p class="department">Planning Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card planning-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/8e44ad/ffffff?text=Researcher" alt="Researcher" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Researcher</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Carlos Mendoza</h5>
-                                                <p class="position">Research Analyst</p>
-                                                <p class="department">Planning Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card planning-theme">
-                                            <div class="org-image">
-                                                <img src="https://via.placeholder.com/300x350/8e44ad/ffffff?text=Strategist" alt="Strategist" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Planning Strategist</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Julia Santiago</h5>
-                                                <p class="position">Development Planning Officer</p>
-                                                <p class="department">Planning Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev carousel-nav-btn" type="button" data-bs-target="#planningCarousel" data-bs-slide="prev">
-                            <i class="bi bi-chevron-left"></i>
-                        </button>
-                        <button class="carousel-control-next carousel-nav-btn" type="button" data-bs-target="#planningCarousel" data-bs-slide="next">
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Engineering Unit -->
-            <div class="tab-pane fade" id="engineering-unit" role="tabpanel">
-                <div class="carousel-wrapper" data-aos="fade-up">
-                    <div id="engineeringCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#engineeringCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-                            <button type="button" data-bs-target="#engineeringCarousel" data-bs-slide-to="1"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card">
-                                            <div class="org-image" style="background: linear-gradient(135deg, #0066b3, #004c8c);">
-                                                <img src="https://via.placeholder.com/300x350/0066b3/ffffff?text=Chief+Engineer" alt="Chief Engineer" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Chief Engineer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Engr. Ricardo Dimagiba</h5>
-                                                <p class="position">Chief Engineer</p>
-                                                <p class="department">Engineering Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card">
-                                            <div class="org-image" style="background: linear-gradient(135deg, #0066b3, #004c8c);">
-                                                <img src="https://via.placeholder.com/300x350/0066b3/ffffff?text=Structural+Engineer" alt="Structural Engineer" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Structural Engineer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Engr. Maria Clara Gomez</h5>
-                                                <p class="position">Structural Engineer III</p>
-                                                <p class="department">Engineering Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card">
-                                            <div class="org-image" style="background: linear-gradient(135deg, #0066b3, #004c8c);">
-                                                <img src="https://via.placeholder.com/300x350/0066b3/ffffff?text=Geodetic+Engineer" alt="Geodetic Engineer" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Geodetic Engineer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Engr. Jose Rizal IV</h5>
-                                                <p class="position">Geodetic Engineer III</p>
-                                                <p class="department">Engineering Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card">
-                                            <div class="org-image" style="background: linear-gradient(135deg, #0066b3, #004c8c);">
-                                                <img src="https://via.placeholder.com/300x350/0066b3/ffffff?text=Electrical+Engineer" alt="Electrical Engineer" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Electrical Engineer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Engr. Antonio Luna</h5>
-                                                <p class="position">Electrical Engineer II</p>
-                                                <p class="department">Engineering Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card">
-                                            <div class="org-image" style="background: linear-gradient(135deg, #0066b3, #004c8c);">
-                                                <img src="https://via.placeholder.com/300x350/0066b3/ffffff?text=Sanitary+Engineer" alt="Sanitary Engineer" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Sanitary Engineer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Engr. Sofia Andres</h5>
-                                                <p class="position">Sanitary Engineer II</p>
-                                                <p class="department">Engineering Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev carousel-nav-btn" type="button" data-bs-target="#engineeringCarousel" data-bs-slide="prev">
-                            <i class="bi bi-chevron-left"></i>
-                        </button>
-                        <button class="carousel-control-next carousel-nav-btn" type="button" data-bs-target="#engineeringCarousel" data-bs-slide="next">
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Administrative Unit -->
-            <div class="tab-pane fade" id="admin-unit" role="tabpanel">
-                <div class="carousel-wrapper" data-aos="fade-up">
-                    <div id="adminCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#adminCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-                            <button type="button" data-bs-target="#adminCarousel" data-bs-slide-to="1"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card">
-                                            <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                                <img src="https://via.placeholder.com/300x350/6c757d/ffffff?text=Admin+Head" alt="Admin Head" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Administrative Head</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Atty. Marilou Diaz</h5>
-                                                <p class="position">Administrative Officer V</p>
-                                                <p class="department">Administrative Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card">
-                                            <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                                <img src="https://via.placeholder.com/300x350/6c757d/ffffff?text=HR+Manager" alt="HR Manager" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">HR Manager</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Carolina Hernandez</h5>
-                                                <p class="position">Human Resources Manager</p>
-                                                <p class="department">Administrative Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card">
-                                            <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                                <img src="https://via.placeholder.com/300x350/6c757d/ffffff?text=Legal+Officer" alt="Legal Officer" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Legal Officer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Atty. Miguel Cruz</h5>
-                                                <p class="position">Legal Officer III</p>
-                                                <p class="department">Administrative Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card">
-                                            <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                                <img src="https://via.placeholder.com/300x350/6c757d/ffffff?text=Records+Officer" alt="Records Officer" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Records Officer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Dolores Santos</h5>
-                                                <p class="position">Records Officer II</p>
-                                                <p class="department">Administrative Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card">
-                                            <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                                <img src="https://via.placeholder.com/300x350/6c757d/ffffff?text=Supply+Officer" alt="Supply Officer" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Supply Officer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Rogelio Mercado</h5>
-                                                <p class="position">Supply Officer III</p>
-                                                <p class="department">Administrative Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev carousel-nav-btn" type="button" data-bs-target="#adminCarousel" data-bs-slide="prev">
-                            <i class="bi bi-chevron-left"></i>
-                        </button>
-                        <button class="carousel-control-next carousel-nav-btn" type="button" data-bs-target="#adminCarousel" data-bs-slide="next">
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Procurement Unit -->
-            <div class="tab-pane fade" id="procurement-unit" role="tabpanel">
-                <div class="carousel-wrapper" data-aos="fade-up">
-                    <div id="procurementCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#procurementCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row g-4 justify-content-center">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card procurement-theme">
-                                            <div class="org-image">
-                                                <img src="static/css/images/SAB.jpg" alt="Sharinah A. Batocapala" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Procurement Engineer</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Sharinah A. Batocapala</h5>
-                                                <p class="position">Engineering III | Procurement Engineer</p>
-                                                <p class="department">Procurement Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="org-card procurement-theme">
-                                            <div class="org-image">
-                                                <img src="static/css/images/Paglinawan.jpg" alt="Erik Augustine C. Paglinawan" class="img-fluid">
-                                                <div class="org-overlay">
-                                                    <p class="overlay-text">Engineer II</p>
-                                                </div>
-                                            </div>
-                                            <div class="org-info">
-                                                <h5>Erik Augustine C. Paglinawan</h5>
-                                                <p class="position">Engineer II</p>
-                                                <p class="department">Procurement Unit</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev carousel-nav-btn" type="button" data-bs-target="#procurementCarousel" data-bs-slide="prev">
-                            <i class="bi bi-chevron-left"></i>
-                        </button>
-                        <button class="carousel-control-next carousel-nav-btn" type="button" data-bs-target="#procurementCarousel" data-bs-slide="next">
-                            <i class="bi bi-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#unitSlideshow" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#unitSlideshow" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 </section>
