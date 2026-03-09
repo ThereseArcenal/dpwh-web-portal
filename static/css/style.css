@@ -1981,3 +1981,135 @@
     background: rgb(0, 0, 0);
     border-bottom: 3px solid var(--primary-color);
 }
+/* Typing Animation Styles - FIXED */
+.typing-container {
+    min-height: 200px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.typing-line {
+    display: block;
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#typing-line1, #typing-line2 {
+    letter-spacing: 0.15em;
+    width: 0;
+    animation: typing 3.5s steps(40, end) forwards;
+    text-align: left;
+    transform-origin: left;
+}
+
+#typing-line1 {
+    animation: typing 2s steps(20, end) forwards;
+    animation-delay: 0.5s;
+}
+
+#typing-line2 {
+    animation: typing 3.5s steps(35, end) forwards; /* Increased steps for longer text */
+    animation-delay: 2.5s;
+    border-right: 3px solid var(--primary-color);
+}
+
+/* Typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Blinking cursor effect */
+#typing-line2 {
+    border-right: 3px solid var(--primary-color);
+    animation: typing 3.5s steps(35, end) forwards,
+               blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--primary-color); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .display-3 {
+        font-size: 3rem;
+    }
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #typing-line1, #typing-line2 {
+        white-space: normal;
+        animation: none;
+        width: 100%;
+        border-right: none;
+    }
+    
+    .typing-container {
+        min-height: auto;
+    }
+    
+    .display-3 {
+        font-size: 2.5rem;
+    }
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+/* Responsive text sizing for new title */
+@media (max-width: 1200px) {
+    .display-3 {
+        font-size: 3.5rem;
+    }
+    .display-5 {
+        font-size: 2.2rem;
+    }
+    h4.text-secondary {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .display-3 {
+        font-size: 3rem;
+    }
+    .display-5 {
+        font-size: 2rem;
+    }
+    h4.text-secondary {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .display-3 {
+        font-size: 2.5rem;
+    }
+    .display-5 {
+        font-size: 1.8rem;
+    }
+    h4.text-secondary {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-3 {
+        font-size: 2rem;
+    }
+    .display-5 {
+        font-size: 1.5rem;
+    }
+    h4.text-secondary {
+        font-size: 1rem;
+    }
+}
