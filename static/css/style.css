@@ -1894,3 +1894,134 @@ section {
         width: 33.333%;
     }
 }
+/* ===== IMPROVED MOBILE NAVBAR STYLES ===== */
+
+/* For tablets and smaller (768px to 991px) */
+@media (max-width: 991px) and (min-width: 769px) {
+    .navbar-brand .d-flex.flex-column {
+        max-width: 280px;
+    }
+    
+    .navbar-brand small.d-none.d-md-block {
+        font-size: 0.7rem !important;
+        white-space: nowrap;
+    }
+    
+    .navbar-brand span.d-none.d-md-inline {
+        font-size: 0.85rem !important;
+        white-space: nowrap;
+    }
+    
+    .navbar-brand small.d-none.d-md-inline {
+        font-size: 0.65rem !important;
+    }
+}
+
+/* For mobile devices (768px and below) */
+@media (max-width: 768px) {
+    #mainNav {
+        padding: 8px 0;
+    }
+    
+    .navbar-brand .d-flex {
+        flex-wrap: wrap;
+    }
+    
+    .navbar-brand img {
+        height: 30px !important;
+        margin-right: 8px !important;
+    }
+    
+    /* Mobile brand text */
+    .navbar-brand span.d-inline.d-md-none {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: white;
+        line-height: 1.2;
+    }
+    
+    /* Adjust mobile menu button */
+    .navbar-toggler {
+        padding: 4px 8px !important;
+    }
+    
+    .navbar-toggler div {
+        width: 24px !important;
+        height: 24px !important;
+    }
+    
+    .navbar-toggler span {
+        width: 20px !important;
+        margin: 2px 0 !important;
+    }
+    
+    /* Mobile menu styling */
+    .navbar-collapse {
+        background: var(--primary-color);
+        padding: 20px 15px;
+        border-radius: 12px;
+        margin-top: 10px;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    
+    .navbar-nav {
+        gap: 5px;
+    }
+    
+    .nav-item {
+        margin: 2px 0;
+    }
+    
+    .nav-link {
+        font-size: 0.95rem;
+        padding: 10px 15px !important;
+        text-align: left;
+    }
+}
+
+/* For small mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .navbar-brand img {
+        height: 25px !important;
+    }
+    
+    .navbar-brand span.d-inline.d-md-none {
+        font-size: 0.8rem;
+    }
+    
+    .nav-link {
+        font-size: 0.9rem;
+        padding: 8px 12px !important;
+    }
+}
+
+/* Ensure navbar doesn't cover content */
+#mainNav {
+    background: transparent;
+    transition: all 0.3s ease;
+    z-index: 1030;
+}
+
+#mainNav.navbar-scrolled {
+    background: var(--primary-color);
+    padding: 8px 0;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+/* Hero section padding adjustment for fixed navbar */
+.hero-section {
+    padding-top: 120px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        padding-top: 90px;
+    }
+}

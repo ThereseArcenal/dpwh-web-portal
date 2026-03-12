@@ -2,17 +2,27 @@
     <div class="container">
         <a class="navbar-brand fw-bold d-flex flex-column align-items-center" href="/" style="font-family: 'Poppins';">
             <div class="d-flex align-items-center w-100">
-            <img src="/static/css/images/Dpwhlogo1.png" alt="DPWH Logo" height="35" class="me-3">
-            <div class="d-flex flex-column">
-            <small class="d-none d-md-block" style="font-size: 0.90rem; font-weight: 500; margin-bottom: 2px;">Republic of the Philippines</small>
-            <div style="width: 73%; height: 1px; background-color: white; margin-bottom: 4px;"></div>
-            <span class="d-none d-md-inline">Department of Public Works and Highways</span>
-            <small class="d-none d-md-inline" style="font-size: 0.85rem;">Cebu City District Engineering Office</small>
-            <span class="d-inline d-md-none">DPWH</span>
-            </div>
+                <img src="/static/css/images/Dpwhlogo1.png" alt="DPWH Logo" height="35" class="me-3">
+                <div class="d-flex flex-column">
+                    <!-- This will show on tablet and desktop -->
+                    <small class="d-none d-md-block" style="font-size: 0.90rem; font-weight: 500; margin-bottom: 2px;">Republic of the Philippines</small>
+                    
+                    <!-- White line separator - visible on tablet/desktop -->
+                    <div class="d-none d-md-block" style="width: 100%; height: 1px; background-color: white; margin-bottom: 4px;"></div>
+                    
+                    <!-- Department name - tablet/desktop -->
+                    <span class="d-none d-md-inline">Department of Public Works and Highways</span>
+                    
+                    <!-- District office - tablet/desktop -->
+                    <small class="d-none d-md-inline" style="font-size: 0.85rem;">Cebu City District Engineering Office</small>
+                    
+                    <!-- Mobile brand - shows only on mobile -->
+                    <span class="d-inline d-md-none fw-bold" style="font-size: 1rem;">DPWH Cebu City</span>
+                </div>
             </div>
         </a>
-        <!-- MENU ICON (Hamburger) - This is what you click -->
+        
+        <!-- Mobile Menu Button -->
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
                 style="box-shadow: none; outline: none;">
@@ -23,30 +33,16 @@
             </div>
         </button>
         
-        <!-- Collapsible Menu -->
+        <!-- Navigation Menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#hero">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#core-values">Core Values</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#vision-mission">Vision & Mission</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#pledge">Quality Policy</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#citizens-charter">Citizens's Charter</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#organizational-chart">Organization</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#core-values">Core Values</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vision-mission">Vision & Mission</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pledge">Quality Policy</a></li>
+                <li class="nav-item"><a class="nav-link" href="#citizens-charter">Citizens's Charter</a></li>
+                <li class="nav-item"><a class="nav-link" href="#organizational-chart">Organization</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
