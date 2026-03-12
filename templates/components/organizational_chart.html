@@ -9,7 +9,7 @@
 
         <!-- Simple Slideshow Container -->
         <div id="unitSlideshow" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
-            <!-- Indicators - NOW WITH 9 BUTTONS -->
+            <!-- Indicators -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -20,6 +20,7 @@
                 <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="6" aria-label="Slide 7"></button>
                 <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="7" aria-label="Slide 8"></button>
                 <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="9" aria-label="Slide 10"></button>
             </div>
 
             <!-- Slideshow Content -->
@@ -28,14 +29,16 @@
                 <div class="carousel-item active">
                     <div class="carousel-wrapper">
                         <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
-                            </i>Office of the District Engineer
+                            Office of the District Engineer
                         </h3>
                         <div class="row g-4 justify-content-center">
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card office-theme">
                                     <div class="org-image">
-                                        <img src="static/css/images/DE.jpg" alt="Manolo B. Madronio. JR." class="img-fluid">
-                                        
+                                        <img src="{{ url_for('static', filename='css/images/DE.jpg') }}" 
+                                             alt="Manolo B. Madronio. JR." 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/2c3e50/ffffff?text=DE'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Manolo B. Madronio. JR.</h5>
@@ -47,8 +50,10 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card office-theme">
                                     <div class="org-image">
-                                        <img src="static/css/images/ADE.jpg" alt="Alfredo E. Hernandez" class="img-fluid">
-                                        
+                                        <img src="{{ url_for('static', filename='css/images/ADE.jpg') }}" 
+                                             alt="Alfredo E. Hernandez" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/2c3e50/ffffff?text=ADE'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Alfredo E. Hernandez</h5>
@@ -61,18 +66,20 @@
                     </div>
                 </div>
 
-                <!-- Slide 2: Procurement Unit -->
+                <!-- Slide 2: Procurement Section -->
                 <div class="carousel-item">
                     <div class="carousel-wrapper">
                         <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
-                            </i>Procurement Section
+                            Procurement Section
                         </h3>
                         <div class="row g-4 justify-content-center">
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card procurement-theme">
                                     <div class="org-image">
-                                        <img src="static/css/images/SAB.jpg" alt="Sharinah A. Batocapala" class="img-fluid">
-                                        
+                                        <img src="{{ url_for('static', filename='css/images/SAB.jpg') }}" 
+                                             alt="Sharinah A. Batocapala" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/d4a574/ffffff?text=SAB'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Sharinah A. Batocapala</h5>
@@ -84,8 +91,10 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card procurement-theme">
                                     <div class="org-image">
-                                        <img src="static/css/images/Paglinawan.jpg" alt="Erik Augustine C. Paglinawan" class="img-fluid">
-                                        
+                                        <img src="{{ url_for('static', filename='css/images/Paglinawan.jpg') }}" 
+                                             alt="Erik Augustine C. Paglinawan" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/d4a574/ffffff?text=Paglinawan'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Erik Augustine C. Paglinawan</h5>
@@ -102,32 +111,36 @@
                 <div class="carousel-item">
                     <div class="carousel-wrapper">
                         <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
-                            </i>Information Communication Technology Staff
+                            Information Communication Technology Staff
                         </h3>
                         <div class="row g-4 justify-content-center">
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card finance-theme">
                                     <div class="org-image">
-                                        <img src="static/css/images/famulagan.jpg" alt="Mario M. Famulagan, Jr." class="img-fluid">
-                                        
+                                        <img src="{{ url_for('static', filename='css/images/famulagan.jpg') }}" 
+                                             alt="Mario M. Famulagan, Jr." 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/27ae60/ffffff?text=Famulagan'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Mario M. Famulagan, Jr.</h5>
                                         <p class="position">Computer Maintenance Technologist II</p>
-                                        <p class="department">INFORMATION COMMUNICATION TECHNOLOGY STAFF</p>
+                                        <p class="department">ICT STAFF</p>
                                     </div>
                                 </div>
                             </div>
-                             <div class="col-lg-4 col-md-6">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="org-card procurement-theme">
                                     <div class="org-image">
-                                        <img src="static/css/images/nolasco.jpg" alt="Joshua Nolasco" class="img-fluid">
-                                        
+                                        <img src="{{ url_for('static', filename='css/images/nolasco.jpg') }}" 
+                                             alt="Joshua Nolasco" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/27ae60/ffffff?text=Nolasco'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Joshua Jay R. Nolasco</h5>
-                                        <p class="position">Administrative  Aide V</p>
-                                        <p class="department">INFORMATION COMMUNICATION TECHNOLOGY STAFF</p>
+                                        <p class="position">Administrative Aide V</p>
+                                        <p class="department">ICT STAFF</p>
                                     </div>
                                 </div>
                             </div>
@@ -135,18 +148,20 @@
                     </div>
                 </div>
 
-                <!-- Slide 4: Planning and Design Unit -->
+                <!-- Slide 4: Planning and Design Section -->
                 <div class="carousel-item">
                     <div class="carousel-wrapper">
                         <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
-                            </i>Planning and Design Section
+                            Planning and Design Section
                         </h3>
                         <div class="row g-4 justify-content-center">
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card planning-theme">
                                     <div class="org-image">
-                                        <img src="static/css/images/felices.jpg" alt="Planning Head" class="img-fluid">
-                                
+                                        <img src="{{ url_for('static', filename='css/images/felices.jpg') }}" 
+                                             alt="Christian B Felices" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/8e44ad/ffffff?text=Felices'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Christian B Felices</h5>
@@ -158,8 +173,10 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card planning-theme">
                                     <div class="org-image">
-                                        <img src="static/css/images/asignar.jpg" alt="Analyst" class="img-fluid">
-                                       
+                                        <img src="{{ url_for('static', filename='css/images/asignar.jpg') }}" 
+                                             alt="Fritz Andrew G. Asignar" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/8e44ad/ffffff?text=Asignar'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Fritz Andrew G. Asignar</h5>
@@ -172,18 +189,20 @@
                     </div>
                 </div>
 
-                <!-- Slide 5: Construction Unit -->
+                <!-- Slide 5: Construction Section -->
                 <div class="carousel-item">
                     <div class="carousel-wrapper">
                         <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
-                            </i>Construction Section
+                            Construction Section
                         </h3>
                         <div class="row g-4 justify-content-center">
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card">
                                     <div class="org-image" style="background: linear-gradient(135deg, #0066b3, #004c8c);">
-                                        <img src="static/css/images/talingting.jpg" alt="Gemuelle Rod E. TalingTing" class="img-fluid">
-                                      
+                                        <img src="{{ url_for('static', filename='css/images/talingting.jpg') }}" 
+                                             alt="Gemuelle Rod E. TalingTing" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/0066b3/ffffff?text=TalingTing'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Gemuelle Rod E. TalingTing</h5>
@@ -195,8 +214,10 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card">
                                     <div class="org-image" style="background: linear-gradient(135deg, #0066b3, #004c8c);">
-                                        <img src="static/css/images/pilenia.jpg" alt="Structural Engineer" class="img-fluid">
-                                      
+                                        <img src="{{ url_for('static', filename='css/images/pilenia.jpg') }}" 
+                                             alt="Winmar R. Pilenia" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/0066b3/ffffff?text=Pilenia'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Winmar R. Pilenia</h5>
@@ -209,18 +230,20 @@
                     </div>
                 </div>
 
-                <!-- Slide 6: Maintenance Unit -->
+                <!-- Slide 6: Maintenance Section -->
                 <div class="carousel-item">
                     <div class="carousel-wrapper">
                         <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
-                            </i>Maintenance Section
+                            Maintenance Section
                         </h3>
                         <div class="row g-4 justify-content-center">
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card">
                                     <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                        <img src="static/css/images/MDBS.jpg" alt="Maintenance Head" class="img-fluid">
-                                     
+                                        <img src="{{ url_for('static', filename='css/images/MDBS.jpg') }}" 
+                                             alt="Ma. Dolores B. Salazar" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/6c757d/ffffff?text=MDBS'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Ma. Dolores B. Salazar</h5>
@@ -232,8 +255,10 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card">
                                     <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                        <img src="static/css/images/cortes.jpg" alt="Staff" class="img-fluid">
-                                      
+                                        <img src="{{ url_for('static', filename='css/images/cortes.jpg') }}" 
+                                             alt="Marcelino S. Cortes IV" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/6c757d/ffffff?text=Cortes'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Marcelino S. Cortes IV</h5>
@@ -246,18 +271,20 @@
                     </div>
                 </div>
 
-                <!-- Slide 7: Quality Assurance Unit -->
+                <!-- Slide 7: Quality Assurance Section -->
                 <div class="carousel-item">
                     <div class="carousel-wrapper">
                         <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
-                            </i>Quality Assurance Section
+                            Quality Assurance Section
                         </h3>
                         <div class="row g-4 justify-content-center">
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card">
                                     <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                        <img src="static/css/images/SEGC.jpg" alt="Stephen Eric G. Castrodes" class="img-fluid">
-                                     
+                                        <img src="{{ url_for('static', filename='css/images/SEGC.jpg') }}" 
+                                             alt="Stephen Eric G. Castrodes" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/6c757d/ffffff?text=SEGC'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Stephen Eric G. Castrodes</h5>
@@ -269,8 +296,10 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card">
                                     <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                        <img src="static/css/images/mansueto.jpg" alt="QA Staff" class="img-fluid">
-                                       
+                                        <img src="{{ url_for('static', filename='css/images/mansueto.jpg') }}" 
+                                             alt="Kenny Louis D. Mansueto" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/6c757d/ffffff?text=Mansueto'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Kenny Louis D. Mansueto</h5>
@@ -282,18 +311,21 @@
                         </div>
                     </div>
                 </div>
-                  <!-- Slide 7.5: Finance Assurance Unit -->
+
+                <!-- Slide 8: Finance Section -->
                 <div class="carousel-item">
                     <div class="carousel-wrapper">
                         <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
-                            </i>Finance Assurance Section
+                            Finance Section
                         </h3>
                         <div class="row g-4 justify-content-center">
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card">
                                     <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                        <img src="static/css/images/FCC.jpg" alt="Stephen Eric G. Castrodes" class="img-fluid">
-                                       
+                                        <img src="{{ url_for('static', filename='css/images/FCC.jpg') }}" 
+                                             alt="Atty. Francis C. Cañete" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/6c757d/ffffff?text=FCC'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Atty. Francis C. Cañete</h5>
@@ -305,8 +337,10 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card">
                                     <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                        <img src="static/css/images/YLAGAN.jpg" alt="QA Staff" class="img-fluid">
-                                        
+                                        <img src="{{ url_for('static', filename='css/images/YLAGAN.jpg') }}" 
+                                             alt="Alma A. Ylagan" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/6c757d/ffffff?text=Ylagan'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Alma A. Ylagan</h5>
@@ -319,22 +353,24 @@
                     </div>
                 </div>
 
-                <!-- Slide 8: Human Resource and Administrative Section -->
+                <!-- Slide 9: Human Resource and Administrative Section -->
                 <div class="carousel-item">
                     <div class="carousel-wrapper">
                         <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
-                            </i>Human Resource and Administrative Section
+                            Human Resource and Administrative Section
                         </h3>
                         <div class="row g-4 justify-content-center">
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card">
                                     <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                        <img src="static/css/images/gabuya.jpg" alt="Jerimiah H. Gabuya" class="img-fluid">
-                                      
+                                        <img src="{{ url_for('static', filename='css/images/gabuya.jpg') }}" 
+                                             alt="Jerimiah H. Gabuya" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/6c757d/ffffff?text=Gabuya'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Jerimiah H. Gabuya</h5>
-                                        <p class="position">Section Chief | Admintrative Officer V</p>
+                                        <p class="position">Section Chief | Administrative Officer V</p>
                                         <p class="department">ADMINISTRATIVE SECTION</p>
                                     </div>
                                 </div>
@@ -342,13 +378,15 @@
                             <div class="col-lg-4 col-md-6">
                                 <div class="org-card">
                                     <div class="org-image" style="background: linear-gradient(135deg, #6c757d, #495057);">
-                                        <img src="static/css/images/avila.jpg" alt="HR Staff" class="img-fluid">
-                                       
+                                        <img src="{{ url_for('static', filename='css/images/avila.jpg') }}" 
+                                             alt="Marilou T. Avila" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/6c757d/ffffff?text=Avila'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Marilou T. Avila</h5>
                                         <p class="position">Assistant Section Chief | Administrative Officer IV</p>
-                                        <p class="department">HUMAN RESOURCE MANAGEMENT UNIT</p>
+                                        <p class="department">HR MANAGEMENT UNIT</p>
                                     </div>
                                 </div>
                             </div>
@@ -356,18 +394,20 @@
                     </div>
                 </div>
 
-                <!-- Slide 9: Project Development Team (Your Card) -->
+                <!-- Slide 10: Project Creator -->
                 <div class="carousel-item">
                     <div class="carousel-wrapper">
                         <h3 class="text-center fw-bold mb-4" style="color: var(--primary-color);">
-                            </i>Project Creator
+                            Project Creator
                         </h3>
                         <div class="row g-4 justify-content-center">
                             <div class="col-lg-4 col-md-6 mx-auto">
                                 <div class="org-card creator-card">
                                     <div class="org-image">
-                                        <img src="static/css/images/me.png" alt="Therese Andrei C. Arcenal" class="img-fluid">
-                                       
+                                        <img src="{{ url_for('static', filename='css/images/me.png') }}" 
+                                             alt="Therese Andrei C. Arcenal" 
+                                             class="img-fluid"
+                                             onerror="this.src='https://via.placeholder.com/300x350/FB8B23/ffffff?text=Me'">
                                     </div>
                                     <div class="org-info">
                                         <h5>Therese Andrei C. Arcenal</h5>
@@ -383,7 +423,7 @@
                 </div>
             </div>
 
-            <!-- Controls with custom styling for better visibility -->
+            <!-- Controls -->
             <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#unitSlideshow" data-bs-slide="prev">
                 <i class="bi bi-chevron-left fs-1"></i>
                 <span class="visually-hidden">Previous</span>
