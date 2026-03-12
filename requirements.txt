@@ -1,15 +1,6 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "app.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "app.py"
-    }
-  ]
-}
+Flask==2.3.3
+Flask-Bootstrap==3.3.7.1
+qrcode==7.4.2
+Pillow==10.1.0
+requests==2.31.0
+gunicorn==21.2.0
