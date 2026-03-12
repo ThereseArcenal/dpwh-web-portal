@@ -109,7 +109,7 @@ body {
 /* ===== HERO SECTION ===== */
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(135deg, #f8f9fa 0%, #FB8B23 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ce6300 85%);
     position: relative;
     padding: 120px 0 60px;
     overflow: hidden;
@@ -630,12 +630,12 @@ body {
 /* Charter Modal */
 .modal-content {
     border-radius: 20px;
-    border: 1px solid #e9ecef;
+    border: 1px solid #000000;
 }
 
 .modal-header {
     padding: 25px;
-    background: #f8f9fa;
+    background: #ffffff;
 }
 
 .modal-title {
@@ -1168,7 +1168,7 @@ body {
 #charterPagesTab {
     border-bottom: 2px solid #e9ecef;
     padding: 15px 15px 0 !important;
-    background: #f8f9fa;
+    background: #000000;
     border-radius: 15px 15px 0 0;
 }
 
