@@ -1401,11 +1401,11 @@
 
 /* Planning Unit Theme */
 .org-card.planning-theme .org-image {
-    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    background: linear-gradient(135deg, #FB8B23, #FB8B23);
 }
 
 .org-card.planning-theme .org-info h5 {
-    color: #8e44ad;
+    color: #000000;
 }
 
 /* Special for Project Creator */
