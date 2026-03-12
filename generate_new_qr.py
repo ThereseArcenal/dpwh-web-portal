@@ -1,35 +1,55 @@
 import qrcode
 import os
+from PIL import Image, ImageDraw, ImageFont
 from qrcode.constants import ERROR_CORRECT_H
 
-# YOUR CORRECT VERCEL URL
+# Your Vercel URL
 url = "https://dpwh-web-portal.vercel.app"
 
-print(f"🔧 Generating QR code for: {url}")
+print(f"🔧 Generating QR code with text logo for: {url}")
 
-# Make sure the folder exists
 os.makedirs("static/qrcodes", exist_ok=True)
 
-# Generate new QR code
+# Create QR code
 qr = qrcode.QRCode(
-    version=1,
+    version=5,
     box_size=10,
-    border=5,
+    border=4,
     error_correction=ERROR_CORRECT_H
 )
 
 qr.add_data(url)
 qr.make(fit=True)
 
-# Create image with your brand colors
-img = qr.make_image(fill_color="#1e1e2f", back_color="white")
+# Generate QR code
+qr_img = qr.make_image(fill_color="#1e1e2f", back_color="white").convert('RGB')
 
-# Save to static folder (for your website)
-img.save("static/qrcodes/qr-code.png")
-print(f"✅ Saved to: static/qrcodes/qr-code.png")
+# Create a small white square in the center for the logo
+qr_width, qr_height = qr_img.size
+center_size = 60
+pos_x = (qr_width - center_size) // 2
+pos_y = (qr_height - center_size) // 2
 
-# Also save a copy in current folder
-img.save("qr-code.png")
-print(f"✅ Saved to: qr-code.png (current folder)")
+# Draw white rectangle
+draw = ImageDraw.Draw(qr_img)
+draw.rectangle([pos_x, pos_y, pos_x + center_size, pos_y + center_size], fill="white")
 
-print("🎉 DONE! Your QR code now points to your Vercel URL!")
+# Add "DPWH" text
+try:
+    # Try to use a font (might need to adjust path)
+    font = ImageFont.truetype("arial.ttf", 20)
+except:
+    font = ImageFont.load_default()
+
+# Center the text
+text = "DPWH"
+text_width = len(text) * 12  # rough estimate
+text_x = pos_x + (center_size - text_width) // 2
+text_y = pos_y + (center_size - 20) // 2
+
+draw.text((text_x, text_y), text, fill="#FB8B23", font=font)
+
+# Save
+qr_img.save("static/qrcodes/qr-code-with-logo.png")
+qr_img.save("qr-code-with-logo.png")
+print("✅ QR code with text logo created!")
