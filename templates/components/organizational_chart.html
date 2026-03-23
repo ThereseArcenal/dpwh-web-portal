@@ -5,10 +5,43 @@
             <span class="section-subtitle">Organization Structure</span>
             <h2 class="display-4 mb-3">Organizational Chart</h2>
             <p class="lead text-muted">Meet the dedicated team members across different units</p>
+            
+            <!-- CLICKABLE ORGANIZATIONAL CHART BUTTON -->
+            <div class="mt-4">
+                <button type="button" class="btn btn-primary btn-lg" onclick="openOrgChartModal()">
+                    <i class="bi bi-diagram-3 me-2"></i> View Organizational Chart
+                </button>
+                <p class="text-muted small mt-2">Click to view the full organizational chart</p>
+            </div>
         </div>
 
-        <!-- Simple Slideshow Container -->
-        <div id="unitSlideshow" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+      <!-- MODAL - Organizational Chart Modal -->
+        <div id="orgChartModal" class="org-chart-modal">
+            <div class="org-modal-overlay" onclick="closeOrgChartModal()"></div>
+            <div class="org-modal-container">
+                <div class="org-modal-header">
+                    <h3 class="org-modal-title">DPWH Cebu City District Engineering Office - Organizational Chart</h3>
+                    <button type="button" class="org-modal-close" onclick="closeOrgChartModal()" aria-label="Close">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div class="org-modal-body">
+                    <img id="orgChartImage" src="/static/css/images/Organization_Chart.png" 
+                         alt="DPWH Cebu City Organizational Chart" 
+                         class="org-chart-image"
+                         style="max-width: 100%; height: auto;">
+                </div>
+                <div class="org-modal-footer">
+                    <button type="button" class="org-btn org-btn-primary" onclick="toggleZoom()" title="Toggle Zoom">
+                        <i class="bi bi-zoom-in"></i> Zoom
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- TEAM MEMBERS SLIDESHOW -->
+        <div id="unitSlideshow" class="carousel slide mt-5" data-bs-ride="false" data-bs-interval="false">
             <!-- Indicators -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#unitSlideshow" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -435,3 +468,4 @@
         </div>
     </div>
 </section>
+

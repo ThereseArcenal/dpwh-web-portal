@@ -59,7 +59,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Optional: Close mobile menu when window resizes to desktop
+// Close mobile menu when window resizes to desktop
 window.addEventListener('resize', function() {
     if (window.innerWidth > 991) {
         const navbarCollapse = document.getElementById('navbarNav');
@@ -72,3 +72,49 @@ window.addEventListener('resize', function() {
         }
     }
 });
+
+// ===== ORGANIZATIONAL CHART MODAL - FULLY FUNCTIONAL =====
+function openOrgChartModal() {
+    const modal = document.getElementById('orgChartModal');
+    if (modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeOrgChartModal() {
+    const modal = document.getElementById('orgChartModal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Close modal with ESC key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('orgChartModal');
+        if (modal && modal.style.display === 'flex') {
+            closeOrgChartModal();
+        }
+    }
+});
+// ===== ZOOM FUNCTION FOR ORGANIZATIONAL CHART =====
+let isZoomed = false;
+
+function toggleZoom() {
+    const img = document.getElementById('orgChartImage');
+    if (img) {
+        if (isZoomed) {
+            img.style.maxWidth = '100%';
+            img.style.maxHeight = '85vh';
+            img.style.cursor = 'zoom-in';
+            isZoomed = false;
+        } else {
+            img.style.maxWidth = '180%';
+            img.style.maxHeight = '180%';
+            img.style.cursor = 'zoom-out';
+            isZoomed = true;
+        }
+    }
+}
